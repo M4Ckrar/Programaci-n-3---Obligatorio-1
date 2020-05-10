@@ -1,0 +1,9 @@
+C:\Users\Manuel\source\repos\Dominio\Repositorios\bin\Debug\Repositorios.dll
+C:\Users\Manuel\source\repos\Dominio\Repositorios\bin\Debug\Repositorios.pdb
+C:\Users\Manuel\source\repos\Dominio\Repositorios\bin\Debug\Dominio.dll
+C:\Users\Manuel\source\repos\Dominio\Repositorios\bin\Debug\Dominio.pdb
+C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.csprojAssemblyReference.cache
+C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
+C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.dll
+C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.pdb
