@@ -1,34 +1,31 @@
 ﻿USE BasePortLog
 
 CREATE TABLE Usuario(
-	Cedula VARCHAR(9) PRIMARY KEY NOT NULL,
+	Cedula VARCHAR(9) PRIMARY KEY,
 	Passwrd VARCHAR(20) NOT NULL,
 	Rol BIT NOT NULL
 )
 
 CREATE TABLE Cliente(
-	RUT BIGINT NOT NULL PRIMARY KEY,
+	RUT BIGINT PRIMARY KEY,
 	FechaIngreso DATETIME
 )
-
 CREATE TABLE Producto(
-	Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	Nombre VARCHAR(20),
+	Id INT PRIMARY KEY IDENTITY(1,1),
+	Nombre VARCHAR(50),
 	PesoUnidad FLOAT,
 	RutCliente BIGINT REFERENCES Cliente(RUT)
 )
 
 CREATE TABLE Importacion(
-	IDImportacion INT PRIMARY KEY IDENTITY(1,1) NOT null,
+	IDImportacion INT PRIMARY KEY IDENTITY(1,1),
 	FechaIngreso DATETIME NOT NULL,
 	FechaSalidaPrevista DATETIME NOT NULL,
 	CantidadImportada INT NOT NULL CHECK(CantidadImportada >= 1),
 	PrecioUnitarioProducto MONEY NOT NULL,
 	ProductoImportado INT REFERENCES Producto(Id),
 	IngresoImportacion VARCHAR(9) REFERENCES Usuario(Cedula)
-
 )
-
 
 --INSERT INTO table_name (column1, column2, column3, ...)
 --VALUES (value1, value2, value3, ...);
@@ -86,7 +83,7 @@ VALUES
 	GETDATE())
 
 
-INSERT INTO Producto (Id, Nombre, PesoUnidad, RutCliente)
+INSERT INTO Producto (Nombre, PesoUnidad, RutCliente)
 VALUES	('Cartas Magic', 500.0, 215544005500),
 		('Pelotas de Basketball', 200.0, 221144775566),
 		('Ropa para Deporte', 300.0, 201346796431),

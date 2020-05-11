@@ -4,3 +4,9 @@ C:\Users\Manuel\source\repos\Dominio\Dominio\obj\Debug\Dominio.csprojAssemblyRef
 C:\Users\Manuel\source\repos\Dominio\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Manuel\source\repos\Dominio\Dominio\obj\Debug\Dominio.dll
 C:\Users\Manuel\source\repos\Dominio\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\bin\Debug\Dominio.dll
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.dll
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.pdb
