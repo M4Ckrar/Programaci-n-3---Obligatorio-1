@@ -8,8 +8,17 @@ namespace Dominio.EntidadesNegocio
 {
     public class Producto
     {
-        public int Codigo { get; set; }
         public string Nombre { get; set; }
-        public double pesoUnidad { get; set; }
+        public double PesoUnidad { get; set; }
+        public Cliente Importador { get; set; }
+
+        public bool ValidarProducto()
+        {
+            string auxNombre = Nombre.Trim();
+            if (auxNombre.Length > 0 && PesoUnidad > 0)
+                return true;
+            else
+                return false;
+        }
     }
 }
