@@ -7,3 +7,12 @@ C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.csproj.
 C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
 C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.dll
 C:\Users\Manuel\source\repos\Dominio\Repositorios\obj\Debug\Repositorios.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\obj\Debug\Repositorios.csprojAssemblyReference.cache
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\obj\Debug\Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\obj\Debug\Repositorios.dll
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\obj\Debug\Repositorios.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\bin\Debug\Repositorios.dll
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\bin\Debug\Repositorios.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\bin\Debug\Dominio.dll
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\bin\Debug\Dominio.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
