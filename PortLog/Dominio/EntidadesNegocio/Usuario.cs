@@ -14,7 +14,7 @@ namespace Dominio.EntidadesNegocio
 
         public bool ValidarUsuario()
         {
-            if (Password.Length >= 6 && Cedula.Length == 8 || Cedula.Length == 9) {
+            if (Password.Length >= 6 && Password.Length <= 20 && Cedula.Length == 8 || Cedula.Length == 9) {
                 bool containsCapitalLetter = false;
                 bool containsLowerCase = false;
                 bool containsDigit = false;

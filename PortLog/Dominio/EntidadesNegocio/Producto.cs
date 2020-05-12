@@ -15,7 +15,7 @@ namespace Dominio.EntidadesNegocio
         public bool ValidarProducto()
         {
             string auxNombre = Nombre.Trim();
-            if (auxNombre.Length > 0 && PesoUnidad > 0)
+            if (auxNombre.Length > 0 && auxNombre.Length <= 50 && PesoUnidad > 0)
                 return true;
             else
                 return false;
