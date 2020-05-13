@@ -11,7 +11,6 @@ C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\obj
 C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\obj\Debug\WCFServices.pdb
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\WCFServices\bin\WCFServices.dll.config
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\WCFServices\bin\WCFServices.dll
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\WCFServices\bin\WCFServices.pdb
@@ -24,6 +23,4 @@ C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLo
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\WCFServices\obj\Debug\WCFServices.csproj.CopyComplete
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\WCFServices\obj\Debug\WCFServices.dll
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\WCFServices\obj\Debug\WCFServices.pdb
-=======
->>>>>>> master
 >>>>>>> master

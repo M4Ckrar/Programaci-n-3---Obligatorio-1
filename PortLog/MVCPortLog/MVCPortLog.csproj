@@ -195,14 +195,12 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\Admin.cshtml" />
     <Content Include="Views\Login\Almacen.cshtml" />
-    <Content Include="Views\Usuario\Index.cshtml" />
     <Content Include="Views\Producto\ListadoProducto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Importacion\" />
-    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -22,24 +22,18 @@
             <div class="navbar-collapse collapse">
                 @if (Session["usuarioLogueado"] != null && ((Usuario)Session["usuarioLogueado"]).Rol == true) //Pestañas del usuario Admin
                 {
-                <ul class="nav navbar-nav">
-                    @Html.ActionLink("Registro de Usuarios", "Index", "Usuarios", new { area = "" }, new { @class = "navbar-brand" })
-                    @Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    @Html.ActionLink("Inicio", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    @Html.ActionLink("Listar", "ListadoProducto", "Producto", new { area = "" }, new { @class = "navbar-brand" })
-                </ul>
+                    <ul class="nav navbar-nav">
+                        @Html.ActionLink("Registro de Usuarios", "Index", "Usuarios", new { area = "" }, new { @class = "navbar-brand" })
+                    </ul>
                 }
                 else if (Session["usuarioLogueado"] != null && ((Usuario)Session["usuarioLogueado"]).Rol == false) //Pestañas del usuario Almacen
                 {
-            <ul class="nav navbar-nav">
-                @Html.ActionLink("Contacto", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("Inicio", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                @Html.ActionLink("Listar", "ListadoProducto", "Producto", new { area = "" }, new { @class = "navbar-brand" })
-            </ul>
+                    <ul class="nav navbar-nav">                        
+                    </ul>
                 }
                 @if (Session["usuarioLogueado"] != null)
                 {
+                    @Html.ActionLink("Listar", "ListadoProducto", "Producto", new { area = "" }, new { @class = "navbar-brand" })
                     @Html.ActionLink("Logout", "LogOut", "Login", new { area = "" }, new { @class = "navbar-brand" })
                 }
             </div>

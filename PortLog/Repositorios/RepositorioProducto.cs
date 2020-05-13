@@ -36,7 +36,7 @@ namespace Repositorios
 
         private string ArmarStringProductos(string delimitador)
         {
-
+            return "hola";
         }
 
         public bool Add(Producto unObjeto)

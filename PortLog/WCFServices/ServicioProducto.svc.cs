@@ -34,7 +34,6 @@ namespace WCFServices
             }
             catch (Exception e)
             {
-
                 throw;
             }
         }

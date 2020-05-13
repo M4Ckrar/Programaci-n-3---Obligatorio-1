@@ -23,7 +23,7 @@ namespace MVCPortLog.Controllers
             ServicioProductoClient popi = new ServicioProductoClient();
             popi.Open();
             IEnumerable<DtoProducto> productosDto = popi.ListarTodosLosProductos();
-            Session["usuarioLogueado"] = productosDto;
+            //Session["usuarioLogueado"] = productosDto;
             popi.Close();
             return View(productosDto);
         }
