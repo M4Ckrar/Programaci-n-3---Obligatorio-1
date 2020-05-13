@@ -10,7 +10,7 @@ namespace Dominio.EntidadesNegocio
     {
         public string Nombre { get; set; }
         public double PesoUnidad { get; set; }
-        public Cliente Importador { get; set; }
+        public long RUTCliente { get; set; }
 
         public bool ValidarProducto()
         {

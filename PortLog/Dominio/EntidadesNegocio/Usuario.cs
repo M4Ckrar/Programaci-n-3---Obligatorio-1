@@ -10,7 +10,7 @@ namespace Dominio.EntidadesNegocio
     {
         public string Cedula { get; set; }
         public string Password { get; set; }
-        public string Rol { get; set; }
+        public Boolean Rol { get; set; }
 
         public bool ValidarUsuario()
         {

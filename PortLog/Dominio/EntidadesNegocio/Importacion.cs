@@ -12,8 +12,8 @@ namespace Dominio.EntidadesNegocio
         public DateTime FechaSalidaPrevista { get; set; }
         public int CantidadImportada { get; set; }
         public int PrecioUnitarioProducto { get; set; }
-        public Producto ProductoImportado { get; set; }
-        public Usuario IngresoImportacion { get; set; }
+        public int IdProductoImportado { get; set; }
+        public string CedulaUsuarioDioAlta { get; set; }
 
         public bool ValidarImportacion()
         {
