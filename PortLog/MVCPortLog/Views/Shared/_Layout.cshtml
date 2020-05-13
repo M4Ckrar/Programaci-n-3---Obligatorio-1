@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Dominio.EntidadesNegocio;
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -16,15 +17,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
+                </button>                
+            </div>           
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
+                @if (Session["usuarioLogueado"] != null && ((Usuario)Session["usuarioLogueado"]).Rol == true) //Pestañas del usuario Admin
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    </ul>
+                }
+                else if (Session["usuarioLogueado"] != null && ((Usuario)Session["usuarioLogueado"]).Rol == false) //Pestañas del usuario Almacen
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    </ul>
+                }
+                @if (Session["usuarioLogueado"] != null)
+                {
+                    @Html.ActionLink("Logout", "LogOut", "Login", new { area = "" }, new { @class = "navbar-brand" })
+                }
             </div>
         </div>
     </div>

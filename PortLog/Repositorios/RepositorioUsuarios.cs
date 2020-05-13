@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Repositorios
 {
-    class RepositorioUsuarios : IRepositorio<Usuario>
+    public class RepositorioUsuarios : IRepositorio<Usuario>
     {
         private string cadenaConexion = ConfigurationManager.ConnectionStrings["miConexion"].ConnectionString;
 
@@ -84,9 +84,9 @@ namespace Repositorios
             try
             {                
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "SELECT * FROM Usuario WHERE ID=@ID";
+                cmd.CommandText = "SELECT * FROM Usuario WHERE Cedula=@Cedula";
                 cmd.Connection = cn;
-                cmd.Parameters.Add(new SqlParameter("@ID", idBuscado));                
+                cmd.Parameters.Add(new SqlParameter("@Cedula", idBuscado));                
                 cn.Open();                
                 SqlDataReader readerUsuario = cmd.ExecuteReader();
                 Usuario unUsuario = null;

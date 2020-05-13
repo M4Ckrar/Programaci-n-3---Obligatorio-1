@@ -37,6 +37,11 @@ INSERT INTO dbo.Usuario
     Rol
 )
 VALUES
+(   '1',  -- Cedula - varchar(9)
+	'1',  -- Passwrd - varchar(20)
+    1 -- Rol - bit
+),
+
 (   '4877770-2',  -- Cedula - varchar(9)
 	'Hola12345',  -- Passwrd - varchar(20)
     1 -- Rol - bit

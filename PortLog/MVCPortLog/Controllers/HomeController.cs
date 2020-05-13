@@ -10,6 +10,10 @@ namespace MVCPortLog.Controllers
     {
         public ActionResult Index()
         {
+            if (Session["usuarioLogueado"] == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 

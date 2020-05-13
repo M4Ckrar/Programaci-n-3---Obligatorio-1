@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h1>Login</h1>
+<form action="/Login/PerformLogin" method="post">
+    <table>
+        <tr>
+            <td><label for="username">Cedula:</label></td>
+            <td><input type="text" name="cedula"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Contraseña:</label></td>
+            <td><input type="password" name="password"></td>
+        </tr>
+    </table>
+    <input type="submit" name="Login" value="Login">
+    <h2 class="MensajeError">@ViewBag.ErrMsg</h2>
+</form>
+<p>@DateTime.Now.ToString("yyyy-dd-MM")</p>
+
