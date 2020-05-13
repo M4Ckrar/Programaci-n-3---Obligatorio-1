@@ -1,0 +1,11 @@
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\WCFServices.dll.config
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\WCFServices.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\WCFServices.pdb
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\Dominio.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\Repositorios.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\Dominio.pdb
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\bin\Repositorios.pdb
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\obj\Debug\WCFServices.csprojAssemblyReference.cache
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\obj\Debug\WCFServices.csproj.CopyComplete
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\obj\Debug\WCFServices.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\WCFServices\obj\Debug\WCFServices.pdb

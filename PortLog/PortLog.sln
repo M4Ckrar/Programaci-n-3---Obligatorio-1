@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1082
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{ADD0A033-F8A7-47CD-A0FE-334A4369261F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPortLog", "MVCPortLog\MVCPortLog.csproj", "{29EDB90F-C4C1-4A76-8A6D-C199D25B9A6D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5EDD4A7A-37DA-4AC1-9265-20B95A81D386} = {5EDD4A7A-37DA-4AC1-9265-20B95A81D386}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositorios", "Repositorios\Repositorios.csproj", "{1C3F877B-001D-4221-B12A-2BB5EC3DFF53}"
 EndProject
@@ -13,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Scripts_BD\Creacion Tablas.sql = Scripts_BD\Creacion Tablas.sql
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServices", "WCFServices\WCFServices.csproj", "{5EDD4A7A-37DA-4AC1-9265-20B95A81D386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +37,10 @@ Global
 		{1C3F877B-001D-4221-B12A-2BB5EC3DFF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C3F877B-001D-4221-B12A-2BB5EC3DFF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C3F877B-001D-4221-B12A-2BB5EC3DFF53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EDD4A7A-37DA-4AC1-9265-20B95A81D386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDD4A7A-37DA-4AC1-9265-20B95A81D386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDD4A7A-37DA-4AC1-9265-20B95A81D386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDD4A7A-37DA-4AC1-9265-20B95A81D386}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

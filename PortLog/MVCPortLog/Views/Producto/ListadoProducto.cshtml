@@ -1,0 +1,35 @@
+﻿
+@using Dominio.EntidadesNegocio;
+
+@using MVCPortLog.ServiceReference1;
+
+@model IEnumerable<DtoProducto>
+
+
+@{
+    ViewBag.Title = "ListadoProducto";
+}
+
+<h2>ListadoProducto</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id Producto</th>
+            <th>Nombre</th>
+            <th>RutCliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DtoProducto p in Model)
+        {
+            <tr>
+                <td>p.Nombre</td>
+                <td>p.RutCliente</td>
+                <td></td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+

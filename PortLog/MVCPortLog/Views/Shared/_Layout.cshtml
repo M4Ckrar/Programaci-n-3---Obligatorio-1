@@ -26,15 +26,17 @@
                     @Html.ActionLink("Registro de Usuarios", "Index", "Usuarios", new { area = "" }, new { @class = "navbar-brand" })
                     @Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
                     @Html.ActionLink("Inicio", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Listar", "ListadoProducto", "Producto", new { area = "" }, new { @class = "navbar-brand" })
                 </ul>
                 }
                 else if (Session["usuarioLogueado"] != null && ((Usuario)Session["usuarioLogueado"]).Rol == false) //Pestañas del usuario Almacen
                 {
-                    <ul class="nav navbar-nav">
-                        @Html.ActionLink("Contacto", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                        @Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                        @Html.ActionLink("Inicio", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    </ul>
+            <ul class="nav navbar-nav">
+                @Html.ActionLink("Contacto", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Inicio", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Listar", "ListadoProducto", "Producto", new { area = "" }, new { @class = "navbar-brand" })
+            </ul>
                 }
                 @if (Session["usuarioLogueado"] != null)
                 {

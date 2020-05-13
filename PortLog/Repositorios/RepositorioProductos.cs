@@ -15,18 +15,52 @@ namespace Repositorios
     {
         private string cadenaConexion = ConfigurationManager.ConnectionStrings["miConexion"].ConnectionString;
 
+
+        //public IEnumerable<Producto> TraerTodosLosProductos()
+        //{
+        //    try
+        //    {
+        //        Producto product = null;
+        //        List<Producto> listaProductos = new List<Producto>();
+        //        SqlConnection cn = new SqlConnection(cadenaConexion);
+        //        SqlCommand cmd = new SqlCommand();
+        //        cmd.Connection = cn;
+        //        cmd.CommandText = "SELECT * FROM Producto";
+        //        cn.Open();
+        //        SqlDataReader dr = cmd.ExecuteReader();
+        //        if (dr.HasRows)
+        //        {
+        //            while (dr.Read())
+        //            {
+        //                product = new Producto
+        //                {
+        //                    Nombre = (string)dr["Nombre"],
+        //                    RUTCliente = (long)dr["RutCliente"],
+        //                };
+        //                listaProductos.Add(product);
+        //            }
+        //        }
+        //        cn.Close();
+        //        return listaProductos;
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw;
+        //    }
+        //}
+
         public bool Add(Producto unObjeto)
-        {            
-            if (unObjeto == null || !unObjeto.ValidarProducto()) return false;         
+        {
+            if (unObjeto == null || !unObjeto.ValidarProducto()) return false;
             SqlConnection cn = new SqlConnection(cadenaConexion);
             try
-            {                
+            {
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = "INSERT INTO Producto VALUES (@Nombre,@PesoUnidad,@RutCliente)";
-                cmd.Connection = cn;                
+                cmd.Connection = cn;
                 cmd.Parameters.Add(new SqlParameter("@Nombre", unObjeto.Nombre));
                 cmd.Parameters.AddWithValue("@PesoUnidad", unObjeto.PesoUnidad);
-                cmd.Parameters.AddWithValue("@RutCliente", unObjeto.RUTCliente);                
+                cmd.Parameters.AddWithValue("@RutCliente", unObjeto.RUTCliente);
                 cn.Open();
                 int filas = cmd.ExecuteNonQuery();
                 cn.Close();
@@ -59,7 +93,7 @@ namespace Repositorios
                     while (readerProducto.Read())
                     {
                         losProductos.Add(new Producto
-                        {                            
+                        {
                             Nombre = readerProducto["Nombre"].ToString(),
                             PesoUnidad = (float)readerProducto["PesoUnidad"],
                             RUTCliente = (long)readerProducto["RutCliente"]
@@ -72,7 +106,7 @@ namespace Repositorios
                 {
                     return null;
                 }
-                    
+
             }
             catch (Exception ex)
             {
@@ -149,29 +183,30 @@ namespace Repositorios
         }
 
         public bool Update(Producto unObjeto)
-        {            
-            if (unObjeto == null || !unObjeto.ValidarProducto()) return false;            
+        {
+            if (unObjeto == null || !unObjeto.ValidarProducto()) return false;
             SqlConnection cn = new SqlConnection(cadenaConexion);
             try
-            {                
-                SqlCommand cmd = new SqlCommand();                
+            {
+                SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = "UPDATE Producto SET Nombre=@Nombre, PesoUnidad=@PesoUnidad, RutCliente=@RutCliente WHERE Id=@ID";
-                cmd.Connection = cn;                
+                cmd.Connection = cn;
                 cmd.Parameters.AddWithValue("@Nombre", unObjeto.Nombre);
                 cmd.Parameters.AddWithValue("@PesoUnidad", unObjeto.PesoUnidad);
-                cmd.Parameters.AddWithValue("@RutCliente", unObjeto.RUTCliente);                                
+                cmd.Parameters.AddWithValue("@RutCliente", unObjeto.RUTCliente);
                 cn.Open();
                 int filas = cmd.ExecuteNonQuery();
                 cn.Close();
                 return (filas == 1);
 
-            }            
+            }
             catch (Exception ex)
             {
                 return false;
             }
 
         }
+
+
     }
 }
-
