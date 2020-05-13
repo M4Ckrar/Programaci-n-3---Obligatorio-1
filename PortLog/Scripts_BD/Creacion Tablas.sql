@@ -24,12 +24,14 @@ CREATE TABLE Importacion(
 	CantidadImportada INT NOT NULL CHECK(CantidadImportada >= 1),
 	PrecioUnitarioProducto MONEY NOT NULL,
 	ProductoImportado INT REFERENCES Producto(Id),
-	IngresoImportacion VARCHAR(9) REFERENCES Usuario(Cedula)
+	IngresoImportacion VARCHAR(9) REFERENCES Usuario(Cedula),
+	EnDeposito BIT
 )
 
 --INSERT INTO table_name (column1, column2, column3, ...)
 --VALUES (value1, value2, value3, ...);
-SELECT * FROM Usuario WHERE Cedula='1547000-2';
+ALTER TABLE Importacion ADD EnDeposito BIT;
+UPDATE IMPORTACION SET EnDeposito = 1;
 
 INSERT INTO dbo.Usuario
 (
@@ -109,7 +111,8 @@ INSERT INTO dbo.Importacion
     CantidadImportada,
     PrecioUnitarioProducto,
     ProductoImportado,
-    IngresoImportacion
+    IngresoImportacion,
+	EnDeposito
 )
 VALUES
 (   
@@ -118,7 +121,8 @@ VALUES
     50,         -- CantidadImportada - int
     20,      -- PrecioUnitarioProducto - money
     1,         -- ProductoImportado - int
-    '4877770-2'         -- IngresoImportacion - varchar(9)
+    '4877770-2',         -- IngresoImportacion - varchar(9)
+	1
 ),
 (   
 	'20150618 10:20:04 AM', 
@@ -126,7 +130,8 @@ VALUES
     30,        
     80,     
     2,      
-    '4877774-2'       
+    '4877774-2',
+	1
 ),
 (   
 	'20040102 10:20:04 AM', 
@@ -134,7 +139,8 @@ VALUES
     100,        
     10,     
     3,      
-    '4547986-2'       
+    '4547986-2',
+	1
 ),
 (   
 	'20010618 10:20:04 AM', 
@@ -142,7 +148,8 @@ VALUES
     300,        
     39,     
     4,      
-    '3526748-2'       
+    '3526748-2',
+	1
 ),
 (   
 	'20190614 10:20:04 AM', 
@@ -150,5 +157,6 @@ VALUES
     1000,        
     68,     
     5,      
-    '1235647-2'       
+    '1235647-2',
+	1
 )

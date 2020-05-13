@@ -16,3 +16,11 @@ C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLo
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\bin\Debug\Dominio.dll
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\bin\Debug\Dominio.pdb
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\bin\Debug\Repositorios.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\bin\Debug\Repositorios.pdb
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\bin\Debug\Dominio.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\bin\Debug\Dominio.pdb
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\obj\Debug\Repositorios.csprojAssemblyReference.cache
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\obj\Debug\Repositorios.dll
+C:\Users\jpkleist\Desktop\Programaci-n-3---Obligatorio-1\PortLog\Repositorios\obj\Debug\Repositorios.pdb
