@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,39 +16,28 @@ namespace Repositorios
     {
         private string cadenaConexion = ConfigurationManager.ConnectionStrings["miConexion"].ConnectionString;
 
+        public void GuardarArchivoProducto(string delimitador, string carpeta, string nombreArchivo)
+        {
+            string productoDelimitados = ArmarStringProductos(delimitador);
+            try
+            {
+                string route = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, carpeta, nombreArchivo);
+                using (StreamWriter sw = new StreamWriter(route, true))
+                {
+                    sw.WriteLine(productoDelimitados);
+                }
+            }
+            catch (Exception ex)
+            {
 
-        //public IEnumerable<Producto> TraerTodosLosProductos()
-        //{
-        //    try
-        //    {
-        //        Producto product = null;
-        //        List<Producto> listaProductos = new List<Producto>();
-        //        SqlConnection cn = new SqlConnection(cadenaConexion);
-        //        SqlCommand cmd = new SqlCommand();
-        //        cmd.Connection = cn;
-        //        cmd.CommandText = "SELECT * FROM Producto";
-        //        cn.Open();
-        //        SqlDataReader dr = cmd.ExecuteReader();
-        //        if (dr.HasRows)
-        //        {
-        //            while (dr.Read())
-        //            {
-        //                product = new Producto
-        //                {
-        //                    Nombre = (string)dr["Nombre"],
-        //                    RUTCliente = (long)dr["RutCliente"],
-        //                };
-        //                listaProductos.Add(product);
-        //            }
-        //        }
-        //        cn.Close();
-        //        return listaProductos;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        throw;
-        //    }
-        //}
+                throw;
+            }
+        }
+
+        private string ArmarStringProductos(string delimitador)
+        {
+
+        }
 
         public bool Add(Producto unObjeto)
         {
