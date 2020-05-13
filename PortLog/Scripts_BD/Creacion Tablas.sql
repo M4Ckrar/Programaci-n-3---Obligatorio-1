@@ -29,12 +29,13 @@ CREATE TABLE Importacion(
 
 --INSERT INTO table_name (column1, column2, column3, ...)
 --VALUES (value1, value2, value3, ...);
+SELECT * FROM Usuario WHERE Cedula='1547000-2';
 
 INSERT INTO dbo.Usuario
 (
     Cedula,
     Passwrd,
-    Rol
+    Rol --Admin: 1, Almacen: 0
 )
 VALUES
 (   '1',  -- Cedula - varchar(9)

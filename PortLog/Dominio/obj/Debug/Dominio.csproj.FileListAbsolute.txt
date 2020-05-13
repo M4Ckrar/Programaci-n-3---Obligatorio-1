@@ -9,3 +9,4 @@ C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLo
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.dll
 C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Manuel\Documents\GitKraken Repos\Programación 3 - Obligatorio 1\PortLog\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache

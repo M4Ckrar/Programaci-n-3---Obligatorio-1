@@ -23,7 +23,7 @@
                 @if (Session["usuarioLogueado"] != null && ((Usuario)Session["usuarioLogueado"]).Rol == true) //Pestañas del usuario Admin
                 {
                 <ul class="nav navbar-nav">
-                    @Html.ActionLink("Contacto", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Registro de Usuarios", "Index", "Usuarios", new { area = "" }, new { @class = "navbar-brand" })
                     @Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
                     @Html.ActionLink("Inicio", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </ul>

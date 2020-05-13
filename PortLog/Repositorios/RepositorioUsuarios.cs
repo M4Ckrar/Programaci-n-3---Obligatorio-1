@@ -59,8 +59,8 @@ namespace Repositorios
                         allUsers.Add(new Usuario
                         {
                             Cedula = readerUsuarios["Cedula"].ToString(),
-                            Password = readerUsuarios["Passwrd"].ToString(),                            
-                            Rol = (Boolean)readerUsuarios["Rol"],                            
+                            Password = readerUsuarios["Passwrd"].ToString(),
+                            Rol = (bool)readerUsuarios["Rol"],
                         });
                     }                    
                     cn.Close();
@@ -98,11 +98,10 @@ namespace Repositorios
                         {
                             Cedula = readerUsuario["Cedula"].ToString(),
                             Password = readerUsuario["Passwrd"].ToString(),
-                            Rol = (Boolean)readerUsuario["Rol"],
+                            Rol = (bool)readerUsuario["Rol"],
                         };
                     }                    
                     cn.Close();
-
                 }
                 return unUsuario;
             }            
